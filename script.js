@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function animateCounter(counter) {
     const target = Number(counter.getAttribute("data-target")) || 0;
-    const duration = 1200; 
+    const duration = 2500; 
     const start = 0;
     const startTime = performance.now();
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.4 
+      threshold: 0.15
     }
   );
 
